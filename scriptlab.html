@@ -57,23 +57,26 @@
         })
         
         for(let x =0; x<student.length;x++){
+
             if(student[x].gpa >=3.20){
                 if(student[x].help == true){
                     console.log('ชั้นปีที่ '+student[x].year)
                     console.log(student[x].fullname+' เกิดเมื่อ '+ (2564-parseInt(student[x].age))+(' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย'))
+                    console.log('\n')
                 }
                 else{
                     console.log('ชั้นปีที่ '+student[x].year)
-                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2564-parseInt(student[x].age))+' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์')
+                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2564-parseInt(student[x].age))+' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์')                   
                 }
-
             }else if(student[x].gpa >=2.75 && student[x].help == true && student[x].year >=2){
                 console.log('ชั้นปีที่ '+student[x].year)
-                console.log(student[x].fullname+' เกิดเมื่อ '+ (2564-parseInt(student[x].age))+(' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย'))
+                console.log(student[x].fullname+' เกิดเมื่อ '+ (2564-parseInt(student[x].age))+(' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย'))   
+                console.log('\n')
            
             }else{
                 console.log('ชั้นปีที่ '+student[x].year)
                 console.log(student[x].fullname+' เกิดเมื่อ '+ (2564-parseInt(student[x].age))+(' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์ และยังไม่ได้ช่วยงานภาควิชา'))
+                console.log('\n')
             }
         }
 
