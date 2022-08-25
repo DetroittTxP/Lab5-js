@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LABSCRIPT</title>
-
     <script>
         let student = [
             {
@@ -70,9 +69,8 @@
         student.sort((a,b) => {
             return a.year-b.year
         })
-        
-        for(let x =0; x<student.length;x++){
 
+        for(let x =0; x<student.length;x++){
             if(student[x].gpa >=3.20){
                 if(student[x].help == true){
                     console.log('ชั้นปีที่ '+student[x].year)
@@ -81,7 +79,7 @@
                 }
                 else{
                     console.log('ชั้นปีที่ '+student[x].year)
-                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์')  
+                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์')  
                     console.log('\n')                 
                 }
             }else if(student[x].gpa >=2.75 && student[x].year >=2){
@@ -94,14 +92,12 @@
                     console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+(' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์เเต่ไม่ได้ช่วยงานภาควิชา'))   
                     console.log('\n')
                 }       
-           
             }else{
                 console.log('ชั้นปีที่ '+student[x].year)
                 console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+(' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์'))
                 console.log('\n')
             }
         }
-
     </script>
 </head>
 <body>
