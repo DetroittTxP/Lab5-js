@@ -31,8 +31,8 @@
             },
             {
                 fullname: 'นายคริสเตียโน่ เมสซี่',
-                age: 19,
-                year: 2,
+                age: 21,
+                year: 4,
                 gpa: 2.60,
                 help:true
             },
@@ -49,7 +49,22 @@
                 year: 2,
                 gpa:1.02,
                 help:false
+            },
+            {
+                fullname: 'นายขนม ผักชีผักไปไกล',
+                age: 20,
+                year: 3,
+                gpa:2.90,
+                help:false
+            },
+            {
+                fullname: 'นางสาวโอเค ไม่โอเค',
+                age: 21,
+                year: 4,
+                gpa:4.00,
+                help:false
             }
+
         ]
 
         student.sort((a,b) => {
@@ -66,7 +81,8 @@
                 }
                 else{
                     console.log('ชั้นปีที่ '+student[x].year)
-                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์')                   
+                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+' ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์')  
+                    console.log('\n')                 
                 }
             }else if(student[x].gpa >=2.75 && student[x].year >=2){
                 if(student[x].help == true ){
@@ -75,7 +91,7 @@
                     console.log('\n')
                 }else{
                     console.log('ชั้นปีที่ '+student[x].year)
-                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+(' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์เเต่ไม่ได้ช่วยงานภาควิชาด้วย'))   
+                    console.log(student[x].fullname+' เกิดเมื่อ '+ (2565-parseInt(student[x].age))+(' ไม่ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์เเต่ไม่ได้ช่วยงานภาควิชา'))   
                     console.log('\n')
                 }       
            
